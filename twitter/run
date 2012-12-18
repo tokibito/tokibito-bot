@@ -1,0 +1,3 @@
+#!/bin/bash
+source /home/tokibito/.virtualenvs/tokibito-bot/bin/activate
+python /home/tokibito/bitbucket/tokibito-bot/twitter/main.py $@
