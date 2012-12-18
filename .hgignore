@@ -1,0 +1,9 @@
+syntax: glob
+*.pyc
+*.orig
+*.swap
+*.raw
+
+syntax: regexp
+^twitter/logs/
+^twitter/settings\.json$
