@@ -386,7 +386,7 @@ ACTION_MAP_CONFIG = [
   [1, tweet_uhihi],
   [1, tweet_hai_sumimasen],
   [1, tweet_bot_kamosiremasen],
-  [1, tweet_sorosoro_akiraresou],
+  #[1, tweet_sorosoro_akiraresou],
   [1, tweet_yama_ni_ikitai],
   [1, tweet_dokokara_nagaretekitanda_kore],
   [1, tweet_bikibiki],
@@ -406,9 +406,9 @@ ACTION_MAP_CONFIG = [
   [1, tweet_hu],
   [1, tweet_gununu],
   [20, tweet_retweet_many],
-  [10, lambda handler: tweet_retweet_list(handler, 'tokibito', 'v')],
-  [10, lambda handler: tweet_retweet_list(handler, 'tokibito', 'py')],
-  [10, lambda handler: tweet_retweet_list(handler, 'tokibito', 'beproud')],
+  [20, lambda handler: tweet_retweet_list(handler, 'tokibito', 'v')],
+  [20, lambda handler: tweet_retweet_list(handler, 'tokibito', 'py')],
+  [20, lambda handler: tweet_retweet_list(handler, 'tokibito', 'beproud')],
   [30, None],  # 何もしない
 ]
 
