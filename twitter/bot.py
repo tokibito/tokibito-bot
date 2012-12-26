@@ -308,10 +308,10 @@ def list_tl(handler, user, slug, count=None):
         print_status(status)
 
 
-def list_retweeted(handler, user, slug):
+def list_retweeted(handler, user, slug, min_count=1, max_count=None):
     """リストのうちしきい値を超えた回数リツイートされた発言を表示
     """
-    status = handler.get_many_retweeted_from_list(user, slug)
+    status = handler.get_many_retweeted_from_list(user, slug, min_count, max_count)
     if status:
         print_status(status)
 
