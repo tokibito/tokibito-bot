@@ -269,6 +269,11 @@ def tweet_rakudehanaigatanoshii(handler):
     handler.tweet(u"楽ではないが楽しい")
 
 
+def tweet_dakaradoushita(handler):
+    "だからどうした"
+    handler.tweet(u"＼だからどうした／")
+
+
 def tweet_retweet_many(handler):
     "リツイート一覧からランダムに選んでリツイート"
     status = handler.get_many_retweeted(RETWEET_COUNT_MIN, RETWEET_COUNT_MAX)
@@ -417,6 +422,7 @@ ACTION_MAP_CONFIG = [
   [1, tweet_gununu],
   [1, tweet_haa],
   [1, tweet_rakudehanaigatanoshii],
+  [1, tweet_dakaradoushita],
   [20, tweet_retweet_many],
   [20, lambda handler: tweet_retweet_list(handler, 'tokibito', 'v')],
   [20, lambda handler: tweet_retweet_list(handler, 'tokibito', 'py')],
