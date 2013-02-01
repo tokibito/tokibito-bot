@@ -411,7 +411,7 @@ ACTION_MAP_CONFIG = [
   [1, tweet_mainichi_hack],
   [1, tweet_monsama_kusobot],
   #[1, tweet_itudemo_isogasii],
-  [1, tweet_minna_yoyuu_aru],
+  #[1, tweet_minna_yoyuu_aru],
   [1, tweet_tsutaetakoto],
   #[1, tweet_bot_ga_ittakoto_kinisisugi],
   [1, tweet_watasi_kininarimasu],
