@@ -31,7 +31,10 @@ def command(*args):
 
 if __name__ == '__main__':
     setup_logging()
-    if len(sys.argv) > 1:
-        command(*sys.argv[1:])
-    else:
-        main()
+    try:
+        if len(sys.argv) > 1:
+            command(*sys.argv[1:])
+        else:
+            main()
+    except KeyboardInterrupt:
+        sys.exit(0)
